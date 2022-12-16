@@ -23,6 +23,7 @@ export function showWeather({ main: { temp }, weather: [weatherInfo] }) {
       <p>${weatherInfo.description}
       <img src="https://openweathermap.org/img/wn/${weatherInfo.icon}@2x.png"/>`;
 
+  //TODO Change to append our nav or heading with the local weather
   document.body.prepend(weatherInfoContainer);
 }
 //**********/
