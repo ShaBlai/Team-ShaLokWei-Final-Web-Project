@@ -13,3 +13,7 @@ export function handleError(msg = DEFAULT_ERROR_MESSAGE) {
 
   document.body.prepend(alertContainer);
 }
+
+export function handleCustomError(err) {
+  handleError(err.message);
+}
