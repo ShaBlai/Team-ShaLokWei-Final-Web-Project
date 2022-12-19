@@ -6,8 +6,13 @@ body {
     height: 15vh;
     display: flex;
     flex-direction: row;
+  
 }
 
+#subheading{
+    --animate-delay: 0.9s;
+
+}
 #header_id {
     text-align: center;
     padding-top: 20px;
