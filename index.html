@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Full-stack-primer</title>
+    <title>Local Lore</title>
 
     <!-- Bootstrap CSS -->
     <link
@@ -14,20 +14,83 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./local_lore_css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
-  <body>
+
+  <body class="p-3 mb-2 bg-transparent text-dark">
     <!-- Header section -->
-    <section id="header_section">
-      <div id="header_id">
-          <h2 id="heading"><p>Local Lore</p></h2>
-          <h5 id="subheading"><p>For better travel experience</p></h5>
+    <section id="header_section" class="rounded border border-green">
+      <div id="header_id" class="rounded border border-yellow">
+        <h2 id="heading" class="animate__animated animate__fadeInUp">
+          Local Lore
+        </h2>
+        <h5
+          id="subheading"
+          class="animate__animated animate__fadeInUp animate__delay-1s"
+        >
+          <p class="text-center">Find your story</p>
+        </h5>
       </div>
       <div id="weather_display">
         <p id="weather">72 F</p>
         <p id="local_time">10:30 am</p>
       </div>
     </section>
+
+    <section>
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-light container-fluid"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+             
+              </li>
+            </ul>
+
+
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </section>
     <!-- Body section -->
+
+
     <section id="body_section">
       <div id="left_body">
         <div id="user_form">
@@ -81,7 +144,6 @@
     ></script>
 
     <script defer type="module" src="./local_lore_js/main.js"></script>
-
   </body>
   <!-- Body ends here -->
 </html>
