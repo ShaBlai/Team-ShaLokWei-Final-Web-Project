@@ -1,0 +1,32 @@
+{
+  "coord": { "lon": -122.2086, "lat": 47.3254 },
+  "weather": [
+    { "id": 500, "main": "Rain", "description": "light rain", "icon": "10d" },
+    { "id": 701, "main": "Mist", "description": "mist", "icon": "50d" }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 41.31,
+    "feels_like": 37.47,
+    "temp_min": 32.38,
+    "temp_max": 46.33,
+    "pressure": 1018,
+    "humidity": 93
+  },
+  "visibility": 9656,
+  "wind": { "speed": 5.75, "deg": 150 },
+  "rain": { "1h": 0.86 },
+  "clouds": { "all": 100 },
+  "dt": 1671551955,
+  "sys": {
+    "type": 2,
+    "id": 2002678,
+    "country": "US",
+    "sunrise": 1671551559,
+    "sunset": 1671582021
+  },
+  "timezone": -28800,
+  "id": 5555235,
+  "name": "Lea Hill",
+  "cod": 200
+}

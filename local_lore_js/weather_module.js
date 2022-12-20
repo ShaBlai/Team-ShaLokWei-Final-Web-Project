@@ -1,6 +1,6 @@
 //Weather Related Stuff
 import { WEATHER_API_KEY } from "./secrets.js";
-//import { getData } from "./api_handler";
+import { getData } from "./api_handler.js";
 import { handleCustomError } from "./error_handling_module.js";
 
 export const loadWeatherModule = () => {
@@ -28,10 +28,9 @@ export const loadWeatherModule = () => {
     //figure out a way to find user's lat & lon
     const apiWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${WEATHER_API_KEY}&units=imperial`;
 
-    fetch(apiWeatherUrl).then((res) =>
-      res.json().then((json) => {
-        showWeather(json);
-      })
-    );
+    getData(apiWeatherUrl).then((json) => {
+      showWeather(json);
+    });
+    //.catch((err) => handleCustomError(err));
   }
 };

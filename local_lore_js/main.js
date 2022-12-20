@@ -1,18 +1,21 @@
-//import { handleCustomError } from "../errors/error.js";
+import { getGoogleEvents } from "./current_events.js";
+
+let header_search = document.getElementById("header_search");
+
 import { getNewsEvents } from "./news.js";
-// import { getData } from "./api_handler";
 
-//import { getWeatherByLocation } from "../weather/weather.js";
-//import { handleCustomError } from "./error_handling_module.js";
+header_search.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  getGoogleEvents("12345");
+
+  alert("clicked");
+});
+
 //import { loadWeatherModule } from "./weather_module.js";
-
-//handleCustomError("test");
-
 //loadWeatherModule();
 
 /* Get user's location and weather data if we can */
-
-// import { handleCustomError } from "../errors/error.js";
 
 //Search form submit handler
 user_input_form.addEventListener("submit", (event) => {
@@ -22,6 +25,7 @@ user_input_form.addEventListener("submit", (event) => {
   getNewsEvents(loc);
   user_input_form.reset();
 });
+
 
 // function handleLocationSuccess(loc) {
 //    alert("User accepted");
