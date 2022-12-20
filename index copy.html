@@ -23,11 +23,13 @@
   <body class="bg-transparent text-dark">
     <!-- Header section -->
     <nav
-      class="navbar navbar-expand-md navbar-dark container-fluid"
+      class="navbar flex-direction: column navbar-expand-md navbar-dark container-fluid"
       id="nav_header"
     >
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Local Lore</a>
+        <a class="navbar-brand animate__animated animate__fadeInUp" href="#"
+          >Local Lore</a
+        >
         <button
           class="navbar-toggler"
           type="button"
@@ -49,29 +51,55 @@
                 border-color: aliceblue;
               "
             >
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a
+                class="nav-link active animate__animated animate__fadeInUp"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
             </li>
             <br />
             <li class="nav-item">
-              <a class="nav-link" href="#resturants_around">Resturants</a>
+              <a
+                class="nav-link animate__animated animate__fadeInUp animate__delay-1s"
+                href="#resturants_around"
+                >Resturants</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#sight_visit">Sights</a>
+              <a
+                class="nav-link animate__animated animate__fadeInUp animate__delay-1s"
+                href="#sight_visit"
+                >Sights</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#upcoming_events">Events</a>
+              <a
+                class="nav-link animate__animated animate__fadeInUp animate__delay-1s"
+                href="#upcoming_events"
+                >Events</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#local_news">News</a>
+              <a
+                class="nav-link animate__animated animate__fadeInUp animate__delay-1s"
+                href="#local_news"
+                >News</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a
+                class="nav-link animate__animated animate__fadeInUp animate__delay-1s"
+                href="#"
+                >About</a
+              >
             </li>
           </ul>
 
           <form class="d-flex" id="header_search">
             <input
               class="form-control me-2"
+              id="city_search"
               type="search"
               placeholder="name of the city"
               aria-label="Search"
@@ -81,18 +109,6 @@
         </div>
       </div>
     </nav>
-
-    <!-- <section id="header_section">
-      <div id="header_id" class="col-9">
-        <h2 id="heading" class="animate__animated animate__fadeInUp">
-          Local Lore<span id="subheading" class="animate__animated animate__fadeInUp animate__delay-1s"> Find your story</span>
-        </h2>
-      </div>
-      <div id="weather_display" class="col-3">
-        <p id="weather">72 F</p>
-        <p id="local_time">10:30 am</p>
-      </div>
-    </section> -->
 
     <!-- Body section -->
 
@@ -107,49 +123,9 @@
         <div class="inner_sections">upcoming_events</div>
       </div>
       <div class="nav_sections" id="local_news">
-        <div class="inner_sections">local_news</div>
-      </div>
-
-      <div id="left_body">
-        <div id="user_form">
-          <!-- User Form -->
-          <!-- <form id="user_input_form">
-            <label><strong>Enter the visiting city</strong></label>
-            <input type="text" id="location" placeholder="Enter a city name" />
-            <label><strong>Attraction Type</strong></label>
-            <select name="cars" id="cars">
-              <option>Resturants</option>
-              <option>Places</option>
-              <option>Events</option>
-            </select>
-            <input
-              type="submit"
-              value="Search"
-              style="background-color: aqua"
-            />
-          </form> -->
-        </div>
-      </div>
-      <div id="right_body">
-        <div class="card mb-3" style="max-width: 540px">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <!-- <img src="..." class="img-fluid rounded-start" alt="..." /> -->
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-                <p class="card-text">
-                  <small class="text-muted">Last updated 3 mins ago</small>
-                </p>
-              </div>
-            </div>
-          </div>
+        <div class="inner_sections">
+          local_news
+          <div class="news_container" id="news_container"></div>
         </div>
       </div>
     </section>
