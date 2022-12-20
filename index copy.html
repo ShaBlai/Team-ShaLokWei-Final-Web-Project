@@ -20,82 +20,100 @@
     />
   </head>
 
-  <body class="p-3 mb-2 bg-transparent text-dark">
+  <body class="bg-transparent text-dark">
     <!-- Header section -->
-    <section id="header_section" class="rounded border border-green">
-      <div id="header_id" class="rounded border border-yellow col-9">
-        <h2 id="heading" class="animate__animated animate__fadeInUp">
-          Local Lore
-        </h2>
-        <h5
-          id="subheading"
-          class="animate__animated animate__fadeInUp animate__delay-1s"
+    <nav
+      class="navbar navbar-expand-md navbar-dark container-fluid"
+      id="nav_header"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Local Lore</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarToggler"
+          aria-controls="navbarToggler"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-          <p class="text-center">Find your story</p>
-        </h5>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarToggler">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li
+              class="nav-item"
+              style="
+                border-style: solid;
+                border-width: 0px 1px 0px 0px;
+                border-color: aliceblue;
+              "
+            >
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <br />
+            <li class="nav-item">
+              <a class="nav-link" href="#resturants_around">Resturants</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sight_visit">Sights</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#upcoming_events">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#local_news">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+          </ul>
+
+          <form class="d-flex" id="header_search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="name of the city"
+              aria-label="Search"
+            />
+            <input class="btn btn-outline-warning" id="city" type="submit" />
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- <section id="header_section">
+      <div id="header_id" class="col-9">
+        <h2 id="heading" class="animate__animated animate__fadeInUp">
+          Local Lore<span id="subheading" class="animate__animated animate__fadeInUp animate__delay-1s"> Find your story</span>
+        </h2>
       </div>
       <div id="weather_display" class="col-3">
         <p id="weather">72 F</p>
         <p id="local_time">10:30 am</p>
       </div>
-    </section>
+    </section> -->
 
-    <section>
-      <nav
-        class="navbar navbar-expand-lg navbar-light bg-light container-fluid"
-      >
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarTogglerDemo02"
-            aria-controls="navbarTogglerDemo02"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-             
-              </li>
-            </ul>
-
-
-            <!-- <form class="d-flex">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form> -->
-          </div>
-        </div>
-      </nav>
-    </section>
     <!-- Body section -->
 
+    <section id="body_section" class="container-fluid">
+      <div class="nav_sections" id="resturants_around">
+        <div class="inner_sections">resturants_around</div>
+      </div>
+      <div class="nav_sections" id="sight_visit">
+        <div class="inner_sections">sight_visit</div>
+      </div>
+      <div class="nav_sections" id="upcoming_events">
+        <div class="inner_sections">upcoming_events</div>
+      </div>
+      <div class="nav_sections" id="local_news">
+        <div class="inner_sections">local_news</div>
+      </div>
 
-    <section id="body_section">
       <div id="left_body">
         <div id="user_form">
           <!-- User Form -->
-          <form id="user_input_form">
+          <!-- <form id="user_input_form">
             <label><strong>Enter the visiting city</strong></label>
             <input type="text" id="location" placeholder="Enter a city name" />
             <label><strong>Attraction Type</strong></label>
@@ -109,9 +127,8 @@
               value="Search"
               style="background-color: aqua"
             />
-          </form>
+          </form> -->
         </div>
-        <div id="local_news"></div>
       </div>
       <div id="right_body">
         <div class="card mb-3" style="max-width: 540px">
