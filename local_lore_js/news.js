@@ -1,12 +1,13 @@
 import { NEWS_EVENTS_API_KEY } from "./secrets.js";
 import { getData } from "./api_handler.js";
+import { getAPIDataWithoutCors } from "./api_helper_function";
 
 //let searchedNews = document.getElementById("city_search").value;
 
 export function getNewsEvents(searchTerm) {
   const apiUrl = `https://newsapi.org/v2/everything?q=${searchTerm}&apiKey=${NEWS_EVENTS_API_KEY}`;
 
-  getData(apiUrl)
+  getAPIDataWithoutCors({ apiUrl, methodToApi: "Get" })
     .then((json) => {
       showNewsEvents(json);
       console.log(json);
