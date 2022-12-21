@@ -1,6 +1,5 @@
 import { getNewsEvents } from "./news.js";
 import { getRestaurants } from "./restaurants.js";
-let header_search = document.getElementById("header_search");
 
 // header_search.addEventListener("submit", (e) => {
 //   e.preventDefault();
@@ -21,7 +20,7 @@ header_search.addEventListener("submit", (event) => {
   let loc = document.getElementById("city_search").value;
   alert(loc);
   getNewsEvents(loc);
-  getRestaurants(loc);
+  //getRestaurants(loc);
   header_search.reset();
 });
 
