@@ -5,31 +5,28 @@ body {
 }
 
 #nav_header {
-  background: linear-gradient(to left, #73dfd0,#03414c);
+  background: linear-gradient(to left, #73dfd0, #03414c);
   /* background-color: #6b53f7; */
   position: fixed;
   border-radius: 5px;
 }
 
-#city_button{
+#city_button {
   background-color: #0b5664;
-  color: white
+  color: white;
 }
-#city_button:hover{
+#city_button:hover {
   background-color: #03414c;
-  
 }
 
 
-.city {
-  min-width: 200px;
-}
 
 .nav_sections {
   height: 100vh;
   width: 100%;
   margin-bottom: 10px;
 }
+
 
 #local_lore_logo{
   border-radius: 50%;
@@ -39,13 +36,24 @@ body {
 
 #picture_container{
   padding-top: 5%;
+  
+#local_lore_logo {
+  border-radius: 60%;
+}
+
+#big_picture_container {
+  width: 100%;
+  height: 100%;
+  background-color: #73dfd0;
+}
+#picture_container {
+  padding-top: 80px;
   height: 70vh;
   width: 100%;
   padding-bottom: 30%;
   background-color: #73dfd0;
   position: relative;
-  z-index: -5;
-    
+  z-index: -5;    
 }
 
 .inner_sections {
@@ -99,8 +107,43 @@ body {
   align-items: center;
   justify-content: space-evenly;
 }
-#body{
-  background-color: #73dfd0;
+
+.auto_fill {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  /* max-width: 480px; */
+  margin-right: 10px;
 }
 
-/* test from lok */
+.auto_fill_items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.auto_fill_items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+  font-size: 14px;
+}
+
+.auto_fill_items div:hover {
+  background-color: #99e9fd;
+}
+
+.auto_fill_active {
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}
+
+/* #local_news {
+  border: 3px solid yellow;
+  height: 60%;
+} */

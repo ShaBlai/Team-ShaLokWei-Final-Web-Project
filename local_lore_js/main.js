@@ -1,13 +1,10 @@
+import { load_auto_fill_module } from "./auto_fill_module.js";
+import { load_fetch_content_module } from "./fetch_content_module.js";
+
 import { getNewsEvents } from "./news.js";
 import { getRestaurants } from "./restaurants.js";
 
-// header_search.addEventListener("submit", (e) => {
-//   e.preventDefault();
-
-//   getGoogleEvents("12345");
-
-//   alert("clicked");
-// });
+load_auto_fill_module();
 
 // import { loadWeatherModule } from "./weather_module.js";
 // loadWeatherModule();
@@ -23,11 +20,3 @@ header_search.addEventListener("submit", (event) => {
   //getRestaurants(loc);
   header_search.reset();
 });
-
-// function handleLocationSuccess(loc) {
-//    alert("User accepted");
-//  }
-
-//  function handleLocationError(err) {
-//   alert(err.message);
-//  }

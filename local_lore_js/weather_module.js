@@ -3,8 +3,10 @@ import { WEATHER_API_KEY } from "./secrets.js";
 import { getData } from "./api_handler.js";
 import { handleCustomError } from "./error_handling_module.js";
 
-export const loadWeatherModule = () => {
-  if (navigator.geolocation) {
+export const loadWeatherModule = (coords) => {
+  if (coords !== {} && coords !== undefined) {
+    getWeatherByLocation(coords);
+  } else if (navigator.geolocation) {
     // Ask the user for permission to use their location
     navigator.geolocation.getCurrentPosition(
       getWeatherByLocation,
@@ -25,6 +27,7 @@ export const loadWeatherModule = () => {
   }
 
   function getWeatherByLocation({ coords: { latitude: lat, longitude: lon } }) {
+    console.log({ coords: { latitude: lat, longitude: lon } });
     //figure out a way to find user's lat & lon
     const apiWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${WEATHER_API_KEY}&units=imperial`;
 
