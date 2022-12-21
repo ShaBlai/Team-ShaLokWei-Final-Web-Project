@@ -13,12 +13,14 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./local_lore_css/styles.css" />
+    
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link rel="stylesheet" href="./local_lore_css/styles.css" />
   </head>
+
 
   <body class="bg-transparent text-dark">
     <!-- Header section -->
@@ -26,6 +28,10 @@
       class="navbar flex-direction: column navbar-expand-md navbar-dark container-fluid"
       id="nav_header"
     >
+
+    
+      </div>
+
       <div class="container-fluid">
         <a class="navbar-brand animate__animated animate__fadeInUp" href="#"
           >Local Lore</a
@@ -63,23 +69,40 @@
               <a
                 class="nav-link animate__animated animate__fadeInUp animate__delay-1s"
                 href="#resturants_around"
+
+                >Restaurants</a
+              >
+            </li>
+            <!-- <li class="nav-item">
+
                 >Resturants</a
               >
             </li>
             <li class="nav-item">
+
               <a
                 class="nav-link animate__animated animate__fadeInUp animate__delay-1s"
                 href="#sight_visit"
                 >Sights</a
               >
+
+            </li> -->
+            <!-- <li class="nav-item">
+
             </li>
             <li class="nav-item">
+
               <a
                 class="nav-link animate__animated animate__fadeInUp animate__delay-1s"
                 href="#upcoming_events"
                 >Events</a
+
+              > -->
+            <!-- </li> -->
+
               >
             </li>
+
             <li class="nav-item">
               <a
                 class="nav-link animate__animated animate__fadeInUp animate__delay-1s"
@@ -104,24 +127,54 @@
               placeholder="name of the city"
               aria-label="Search"
             />
+
+            <input class="btn btn-outline-warning" id="city_button" type="submit" />
+
             <input class="btn btn-outline-warning" id="city" type="submit" />
+
           </form>
         </div>
       </div>
     </nav>
 
-    <!-- Body section -->
 
+
+    <div class="container-fluid" id="big_picture_container"></div>
+    <div class="container-fluid" id="picture_container">
+      <img
+        src="https://i.ibb.co/vX45rfp/Local-Lore-Banner.jpg"
+        class="img-fluid animate__animated animate__fadeIn"
+        alt="Local Lore Logo"
+        id="local_lore_logo"
+      />
+      </div>
+    </div>
+
+
+    <!-- Body section -->
+    <div class="container-fluid" id="body">
+           
+    <section id="body_section" class="container-fluid">
+      <div class="nav_sections" id="resturants_around">
+        <div class="inner_sections">restaurants_around</div>
+      </div>
+      <!-- <div class="nav_sections" id="sight_visit">
+<!-- Body section -->
     <section id="body_section" class="container-fluid">
       <div class="nav_sections" id="resturants_around">
         <div class="inner_sections">resturants_around</div>
       </div>
       <div class="nav_sections" id="sight_visit">
+
         <div class="inner_sections">sight_visit</div>
       </div>
       <div class="nav_sections" id="upcoming_events">
         <div class="inner_sections">upcoming_events</div>
+
+      </div> -->
+
       </div>
+
       <div class="nav_sections" id="local_news">
         <div class="inner_sections">
           local_news
