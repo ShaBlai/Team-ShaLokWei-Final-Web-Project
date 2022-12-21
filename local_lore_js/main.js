@@ -7,9 +7,8 @@ import { getNewsEvents } from "./news.js";
 // import { loadWeatherModule } from "./weather_module.js";
 // loadWeatherModule();
 
-/* Get user's location and weather data if we can */
-
 //Search form submit handler
+
 header_search.addEventListener("submit", (event) => {
   event.preventDefault();
   let loc = document.getElementById("city_search").value;
