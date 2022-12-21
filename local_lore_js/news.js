@@ -21,13 +21,17 @@ export function showNewsEvents({ articles }) {
   let newsStory2 = articles[1].title;
   let dateStory2 = articles[1].urlToImage;
   let urlStory2 = articles[1].url;
+  let contentStory2 = articles[0].description;
 
   let newsStory3 = articles[2].title;
   let dateStory3 = articles[2].urlToImage;
   let urlStory3 = articles[2].url;
+  let contentStory3 = articles[2].description;
+
+  //let htmlNewsContainer = document.getElementById("news_container");
 
   const newsContainer = document.createElement("div");
-  newsContainer.className = "container-fluid";
+  newsContainer.className = "container-fluid col-4";
   newsContainer.setAttribute("style", "width: 30rem");
 
   newsContainer.innerHTML = `   <!--Section: News of the day-->
