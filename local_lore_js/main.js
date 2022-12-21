@@ -23,6 +23,7 @@ user_input_form.addEventListener("submit", (event) => {
   let loc = document.getElementById("location").value;
   alert(loc);
   getNewsEvents(loc);
+  
   user_input_form.reset();
 });
 
