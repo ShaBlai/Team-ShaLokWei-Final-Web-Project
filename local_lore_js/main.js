@@ -4,8 +4,6 @@ load_auto_fill_module();
 import { load_fetch_content_module } from "./fetch_content_module.js";
 load_fetch_content_module();
 
-/* Get user's location and weather data if we can */
-
 //Search form submit handler
 
 // function handleLocationSuccess(loc) {
