@@ -1,16 +1,9 @@
-import { getGoogleEvents } from "./current_events.js";
-
+import { load_auto_fill_module } from "./auto_fill_module.js";
+import { load_fetch_content_module } from "./fetch_content_module.js";
 let header_search = document.getElementById("header_search");
-
 import { getNewsEvents } from "./news.js";
 
-// header_search.addEventListener("submit", (e) => {
-//   e.preventDefault();
-
-//   getGoogleEvents("12345");
-
-//   alert("clicked");
-// });
+load_auto_fill_module();
 
 //import { loadWeatherModule } from "./weather_module.js";
 //loadWeatherModule();
