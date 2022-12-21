@@ -8,8 +8,8 @@ body {
   position: fixed;
 }
 
-.city {
-  min-width: 200px;
+#city {
+  width: 30%;
 }
 
 .nav_sections {
@@ -85,9 +85,42 @@ body {
   justify-content: space-evenly;
 }
 
+.auto_fill {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  /* max-width: 480px; */
+  margin-right: 10px;
+}
+
+.auto_fill_items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.auto_fill_items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+  font-size: 14px;
+}
+
+.auto_fill_items div:hover {
+  background-color: #99e9fd;
+}
+
+.auto_fill_active {
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}
+
 /* #local_news {
   border: 3px solid yellow;
   height: 60%;
 } */
-
-/* test from lok */
