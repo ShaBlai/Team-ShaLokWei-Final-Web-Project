@@ -1,6 +1,8 @@
 import { getData } from "./api_handler.js";
 import { load_coordinates_URL } from "./geographical_coordinates_module.js";
-import { loadWeatherModule } from "./weather_module.js";
+import { load_weather_module } from "./weather_module.js";
+
+import { getNewsEvents } from "./news.js";
 
 export const load_fetch_content_module = () => {
   let header_search = document.getElementById("header_search");
@@ -8,24 +10,28 @@ export const load_fetch_content_module = () => {
   header_search.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    let input_value = document.getElementById("search_box").value;
+    //load user input data
+    let input_value = document.getElementById("city_search").value;
 
-    if (input_value !== "") {
-      const coorinatesURL = load_coordinates_URL(input_value);
+    //load news from local
+    getNewsEvents(input_value);
 
-      //loadWeatherModule();
-      getData(coorinatesURL)
-        .then((json) => {
-          const { lat, lon } = json[0];
-          const coords = { lat, lon };
+    //load weather component
+    // if (input_value !== "") {
+    //   const coorinatesURL = load_coordinates_URL(input_value);
 
-          return coords;
-        })
-        .then((coords) => {
-          console.log(coords);
+    //   getData(coorinatesURL)
+    //     .then((json) => {
+    //       const { lat, lon } = json[0];
+    //       const coords = { lat, lon };
 
-          loadWeatherModule({ latitude: coords.lat, lontitude: coords.lon });
-        });
-    }
+    //       Promise.resolve(coords);
+    //     })
+    //     .then((coords) => {
+    //       load_weather_module(coords);
+    //     });
+    // }
+
+    // header_search.reset();
   });
 };

@@ -1,5 +1,6 @@
 body {
   margin: 0px;
+  width: 100%;
 }
 
 #nav_header {
@@ -7,6 +8,7 @@ body {
   /* background-color: #6b53f7; */
   position: fixed;
   border-radius: 5px;
+  z-index: 1000;
 }
 
 #city_button {
@@ -110,7 +112,6 @@ body {
   position: relative;
   display: inline-block;
   width: 100%;
-  /* max-width: 480px; */
   margin-right: 10px;
 }
 
@@ -125,6 +126,7 @@ body {
 }
 
 .auto_fill_items div {
+  z-index: 1000;
   padding: 10px;
   cursor: pointer;
   background-color: #fff;
