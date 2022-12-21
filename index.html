@@ -13,21 +13,29 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./local_lore_css/styles.css" />
+    
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link rel="stylesheet" href="./local_lore_css/styles.css" />
   </head>
+
 
   <body class="bg-transparent text-dark">
     <!-- Header section -->
     <nav
-      class="navbar navbar-expand-md navbar-dark container-fluid"
+      class="navbar flex-direction: column navbar-expand-md navbar-dark container-fluid"
       id="nav_header"
     >
+
+    
+      </div>
+
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Local Lore</a>
+        <a class="navbar-brand animate__animated animate__fadeInUp" href="#"
+          >Local Lore</a
+        >
         <button
           class="navbar-toggler"
           type="button"
@@ -49,113 +57,123 @@
                 border-color: aliceblue;
               "
             >
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a
+                class="nav-link active animate__animated animate__fadeInUp"
+                aria-current="page"
+                href="#"
+                >Home</a>
+              
+
             </li>
-            <br />
+
+            <br/>
+
             <li class="nav-item">
-              <a class="nav-link" href="#resturants_around">Resturants</a>
+
+              <a
+                class="nav-link animate__animated animate__fadeInUp animate__delay-1s"
+                href="#resturants_around"
+
+                >Restaurants</a
+              >
+
+            </li>
+            <!-- <li class="nav-item">
+
+                >Resturants</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#sight_visit">Sights</a>
+
+              <a
+                class="nav-link animate__animated animate__fadeInUp animate__delay-1s"
+                href="#sight_visit"
+                >Sights</a
+              >
+
+            </li> -->
+            <!-- <li class="nav-item">
+
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#upcoming_events">Events</a>
+
+              <a
+                class="nav-link animate__animated animate__fadeInUp animate__delay-1s"
+                href="#upcoming_events"
+                >Events</a
+
+              > -->
+            <!-- </li> -->
+
+              
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link animate__animated animate__fadeInUp animate__delay-1s"
+                href="#local_news"
+                >News</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#local_news">News</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a
+                class="nav-link animate__animated animate__fadeInUp animate__delay-1s"
+                href="#"
+                >About</a
+              >
             </li>
           </ul>
 
           <form class="d-flex" id="header_search">
-            <div class="auto_fill">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="City, State"
-                aria-label="Search"
-              />
-            </div>
             <input
-              class="btn btn-outline-warning"
-              id="city_button"
-              type="submit"
+              class="form-control me-2"
+              id="city_search"
+              type="search"
+              placeholder="name of the city"
+              aria-label="Search"
             />
+
+            <input class="btn btn-outline-warning" id="city_button" type="submit" />
+         
           </form>
         </div>
       </div>
     </nav>
 
-    <!-- <section id="header_section">
-      <div id="header_id" class="col-9">
-        <h2 id="heading" class="animate__animated animate__fadeInUp">
-          Local Lore<span id="subheading" class="animate__animated animate__fadeInUp animate__delay-1s"> Find your story</span>
-        </h2>
+
+
+    <div class="container-fluid d-none d-md-block d-lg-block" id="big_picture_container"></div>
+    <div class="container-fluid" id="picture_container">
+      <img
+        src="https://i.ibb.co/vX45rfp/Local-Lore-Banner.jpg"
+        class="img-fluid animate__animated animate__fadeIn d-none d-md-block d-lg-block"
+        alt="Local Lore Logo"
+        id="local_lore_logo"
+      />
       </div>
-      <div id="weather_display" class="col-3">
-        <p id="weather">72 F</p>
-        <p id="local_time">10:30 am</p>
-      </div>
-    </section> -->
+    </div>
+
 
     <!-- Body section -->
-
+    <div class="container-fluid" id="body">
+           
     <section id="body_section" class="container-fluid">
-      <div class="nav_sections" id="resturants_around">
-        <div class="inner_sections">resturants_around</div>
-      </div>
-      <div class="nav_sections" id="sight_visit">
-        <div class="inner_sections">sight_visit</div>
-      </div>
-      <div class="nav_sections" id="upcoming_events">
-        <div class="inner_sections">upcoming_events</div>
-      </div>
-      <div class="nav_sections" id="local_news">
-        <div class="inner_sections">local_news</div>
-      </div>
-
-      <div id="left_body">
-        <div id="user_form">
-          <!-- User Form -->
-          <!-- <form id="user_input_form">
-            <label><strong>Enter the visiting city</strong></label>
-            <input type="text" id="location" placeholder="Enter a city name" />
-            <label><strong>Attraction Type</strong></label>
-            <select name="cars" id="cars">
-              <option>Resturants</option>
-              <option>Places</option>
-              <option>Events</option>
-            </select>
-            <input
-              type="submit"
-              value="Search"
-              style="background-color: aqua"
-            />
-          </form> -->
-        </div>
-      </div>
-      <div id="right_body">
-        <div class="card mb-3" style="max-width: 540px">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <!-- <img src="..." class="img-fluid rounded-start" alt="..." /> -->
+           
+      <!-- <div class="nav_sections align-items-center container-fluid" id="local_news"> -->
+        <div class="inner_sections align-items-center container-fluid" id="local_news">
+          <h1 class="d-flex flex-row justify-content-center container-fluid">Your News:</h1>
+          <div class="row align-items-center max-height: 45%">
+            <div class="col d-flex max-height: 45%" id="news_story_container1">
+              
             </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-                <p class="card-text">
-                  <small class="text-muted">Last updated 3 mins ago</small>
-                </p>
-              </div>
+            <div class="col d-flex max-height: 45%" id="news_story_container2">
+              
+            </div>
+            <div class="col d-flex max-height: 45%" id="news_story_container3">
+              
             </div>
           </div>
+          
         </div>
       </div>
     </section>
@@ -165,8 +183,8 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
-    <script defer src="./local_lore_js/lok_restaurants.js"></script>
-    <!-- <script defer type="module" src="./local_lore_js/main.js"></script> -->
+
+    <script defer type="module" src="./local_lore_js/main.js"></script>
   </body>
   <!-- Body ends here -->
 </html>
