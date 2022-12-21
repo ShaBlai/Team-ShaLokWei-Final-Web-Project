@@ -9,6 +9,7 @@ body {
   /* background-color: #6b53f7; */
   position: fixed;
   border-radius: 5px;
+  z-index: 1000
 }
 
 #city_button {
@@ -32,11 +33,6 @@ body {
   border-radius: 50%;
 }
 
-
-
-#picture_container{
-  padding-top: 5%;
-}
   
 #local_lore_logo {
   border-radius: 60%;
@@ -142,6 +138,10 @@ body {
 .auto_fill_active {
   background-color: DodgerBlue !important;
   color: #ffffff;
+}
+
+#body{
+  background-color: #73dfd0;
 }
 
 /* #local_news {
