@@ -1,5 +1,7 @@
 import { load_auto_fill_module } from "./auto_fill_module.js";
 import { load_fetch_content_module } from "./fetch_content_module.js";
+let header_search = document.getElementById("header_search");
+import { getNewsEvents } from "./news.js";
 
 load_auto_fill_module();
 
