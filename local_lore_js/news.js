@@ -1,15 +1,19 @@
 import { NEWS_EVENTS_API_KEY } from "./secrets.js";
 import { getData } from "./api_handler.js";
 
-let searchedNews = document.getElementById("city_search").value;
+//let searchedNews = document.getElementById("city_search").value;
 
 export function getNewsEvents(searchTerm) {
   const apiUrl = `https://newsapi.org/v2/everything?q=${searchTerm}&apiKey=${NEWS_EVENTS_API_KEY}`;
 
-  getData(apiUrl).then((json) => {
-    showNewsEvents(json);
-    console.log(json);
-  });
+  getData(apiUrl)
+    .then((json) => {
+      showNewsEvents(json);
+      console.log(json);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
 }
 
 //
