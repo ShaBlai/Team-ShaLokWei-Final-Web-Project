@@ -49,16 +49,48 @@
                 border-color: aliceblue;
               "
             >
+              <a
+                class="nav-link active animate__animated animate__fadeInUp"
+                aria-current="page"
+                href="#"
+                >Home</a>
+              
               <a class="nav-link active" aria-current="page" href="#">Home</a>
+
             </li>
-            <br />
+
+            <br/>
+
             <li class="nav-item">
+
+
+              <a
+                class="nav-link animate__animated animate__fadeInUp animate__delay-1s"
+                href="#resturants_around"
+
+                >Restaurants</a
+              >
+
+            </li>
+            <!-- <li class="nav-item">
+
+                >Resturants</a
+              >
+
               <a class="nav-link" href="#resturants_around">Resturants</a>
+
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#sight_visit">Sights</a>
             </li>
             <li class="nav-item">
+              <a
+                class="nav-link animate__animated animate__fadeInUp animate__delay-1s"
+                href="#upcoming_events"
+                >Events</a> 
+            </li>    
+            
+            <li>
               <a class="nav-link" href="#upcoming_events">Events</a>
             </li>
             <li class="nav-item">
@@ -72,6 +104,7 @@
           <form class="d-flex" id="header_search">
             <div class="auto_fill">
               <input
+                id = "city_search"
                 class="form-control me-2"
                 type="search"
                 placeholder="City, State"
@@ -83,16 +116,30 @@
               id="city_button"
               type="submit"
             />
+            <input class="btn btn-outline-warning" id="city_button" type="submit" />     
           </form>
         </div>
       </div>
     </nav>
+
+
+
+
+    <div class="container-fluid d-none d-md-block d-lg-block" id="big_picture_container"></div>
+    <div class="container-fluid" id="picture_container">
+      <img
+        src="https://i.ibb.co/vX45rfp/Local-Lore-Banner.jpg"
+        class="img-fluid animate__animated animate__fadeIn d-none d-md-block d-lg-block"
+        alt="Local Lore Logo"
+        id="local_lore_logo"
+      />
 
     <!-- <section id="header_section">
       <div id="header_id" class="col-9">
         <h2 id="heading" class="animate__animated animate__fadeInUp">
           Local Lore<span id="subheading" class="animate__animated animate__fadeInUp animate__delay-1s"> Find your story</span>
         </h2>
+
       </div>
       <div id="weather_display" class="col-3">
         <p id="weather">72 F</p>
@@ -102,6 +149,25 @@
 
     <!-- Body section -->
 
+    <div class="container-fluid" id="body">
+           
+    <section id="body_section" class="container-fluid">
+           
+      <div class="nav_sections align-items-center" id="local_news">
+        <div class="inner_sections align-items-center">
+          local_news
+          <div class="row align-items-center">
+            <div class="col">
+              One of three columns
+            </div>
+            <div class="col">
+              One of three columns
+            </div>
+            <div class="col">
+              One of three columns
+            </div>
+          </div>
+          
     <section id="body_section" class="container-fluid">
       <div class="nav_sections" id="resturants_around">
         <div class="inner_sections">resturants_around</div>
@@ -118,22 +184,7 @@
 
       <div id="left_body">
         <div id="user_form">
-          <!-- User Form -->
-          <!-- <form id="user_input_form">
-            <label><strong>Enter the visiting city</strong></label>
-            <input type="text" id="location" placeholder="Enter a city name" />
-            <label><strong>Attraction Type</strong></label>
-            <select name="cars" id="cars">
-              <option>Resturants</option>
-              <option>Places</option>
-              <option>Events</option>
-            </select>
-            <input
-              type="submit"
-              value="Search"
-              style="background-color: aqua"
-            />
-          </form> -->
+                 
         </div>
       </div>
       <div id="right_body">
@@ -156,6 +207,7 @@
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>
@@ -166,7 +218,7 @@
       crossorigin="anonymous"
     ></script>
     <script defer src="./local_lore_js/lok_restaurants.js"></script>
-    <!-- <script defer type="module" src="./local_lore_js/main.js"></script> -->
+    <script defer type="module" src="./local_lore_js/main.js"></script>
   </body>
   <!-- Body ends here -->
 </html>
