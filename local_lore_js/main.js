@@ -1,11 +1,9 @@
 import { load_auto_fill_module } from "./auto_fill_module.js";
-
 load_auto_fill_module();
 
-//import { load_fetch_content_module } from "./fetch_content_module.js";
-
+import { getNewsEvents } from "./news.js";
 //import { getRestaurants } from "./restaurants.js";
-
+//import { load_fetch_content_module } from "./fetch_content_module.js";
 // import { loadWeatherModule } from "./weather_module.js";
 // loadWeatherModule();
 
@@ -20,8 +18,6 @@ header_search.addEventListener("submit", (event) => {
   let loc = document.getElementById("city_search").value;
   alert(loc);
   getNewsEvents(loc);
-  getRestaurants(loc);
+  //getRestaurants(loc);
   header_search.reset();
 });
-
-
