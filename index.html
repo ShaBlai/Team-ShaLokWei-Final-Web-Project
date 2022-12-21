@@ -13,7 +13,7 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-
+    
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -29,7 +29,7 @@
       id="nav_header"
     >
 
-
+    
       </div>
 
       <div class="container-fluid">
@@ -49,23 +49,20 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarToggler">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a
-                class="nav-link active animate__animated animate__fadeInUp"
-                aria-current="page"
-                href="#"
-                >Home</a
-              >
             <li
               class="nav-item"
-
+              style="
+                border-style: solid;
+                border-width: 0px 1px 0px 0px;
+                border-color: aliceblue;
+              "
             >
               <a
                 class="nav-link active animate__animated animate__fadeInUp"
                 aria-current="page"
                 href="#"
                 >Home</a>
-
+              
 
             </li>
 
@@ -86,14 +83,31 @@
                 >Resturants</a
               >
             </li>
-
             <li class="nav-item">
+
+              <a
+                class="nav-link animate__animated animate__fadeInUp animate__delay-1s"
+                href="#sight_visit"
+                >Sights</a
+              >
+
+            </li> -->
+            <!-- <li class="nav-item">
+
+            </li>
+            <li class="nav-item">
+
               <a
                 class="nav-link animate__animated animate__fadeInUp animate__delay-1s"
                 href="#upcoming_events"
                 >Events</a
-              >
+
+              > -->
+            <!-- </li> -->
+
+              
             </li>
+
             <li class="nav-item">
               <a
                 class="nav-link animate__animated animate__fadeInUp animate__delay-1s"
@@ -101,7 +115,6 @@
                 >News</a
               >
             </li>
-
             <li class="nav-item">
               <a
                 class="nav-link animate__animated animate__fadeInUp animate__delay-1s"
@@ -121,11 +134,9 @@
                 aria-label="Search"
               />
             </div>
-            <input
-              class="btn btn-outline-warning"
-              id="city_button"
-              type="submit"
-            />
+
+            <input class="btn btn-outline-warning" id="city_button" type="submit" />
+         
           </form>
         </div>
       </div>
@@ -147,19 +158,25 @@
 
     <!-- Body section -->
     <div class="container-fluid" id="body">
-
+           
     <section id="body_section" class="container-fluid">
-      <div class="nav_sections" id="resturants_around">
-        <div class="inner_sections">resturants_around</div>
-      </div>
-      <div class="nav_sections" id="sight_visit">
-        <div class="inner_sections">sight_visit</div>
-      </div>
-      <div class="nav_sections align-items-center" id="upcoming_events">
-        <div class="inner_sections">upcoming_events</div>
-      </div>
-      <div class="nav_sections align-items-center" id="local_news">
-        <div class="inner_sections">local_news</div>
+           
+      <!-- <div class="nav_sections align-items-center container-fluid" id="local_news"> -->
+        <div class="inner_sections align-items-center container-fluid" id="local_news">
+          <h1 class="d-flex flex-row justify-content-center container-fluid">Your News:</h1>
+          <div class="row align-items-center max-height: 45%">
+            <div class="col d-flex max-height: 45%" id="news_story_container1">
+              
+            </div>
+            <div class="col d-flex max-height: 45%" id="news_story_container2">
+              
+            </div>
+            <div class="col d-flex max-height: 45%" id="news_story_container3">
+              
+            </div>
+          </div>
+          
+        </div>
       </div>
     </section>
     <script
@@ -168,7 +185,7 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
-    <!-- <script defer src="./local_lore_js/lok_restaurants.js"></script> -->
+
     <script defer type="module" src="./local_lore_js/main.js"></script>
   </body>
   <!-- Body ends here -->
