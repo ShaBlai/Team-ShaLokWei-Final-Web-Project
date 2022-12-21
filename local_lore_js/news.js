@@ -11,20 +11,19 @@ export function getNewsEvents(searchTerm) {
 }
 
 //
-debugger;
 export function showNewsEvents({ articles }) {
   let titleStory1 = articles[0].title;
   let imageStory1 = articles[0].urlToImage;
   let urlStory1 = articles[0].url;
   let contentStory1 = articles[0].description;
 
-  let newsStory2 = articles[1].title;
-  let dateStory2 = articles[1].urlToImage;
+  let titleStory2 = articles[1].title;
+  let imageStory2 = articles[1].urlToImage;
   let urlStory2 = articles[1].url;
   let contentStory2 = articles[0].description;
 
-  let newsStory3 = articles[2].title;
-  let dateStory3 = articles[2].urlToImage;
+  let titleStory3 = articles[2].title;
+  let imageStory3 = articles[2].urlToImage;
   let urlStory3 = articles[2].url;
   let contentStory3 = articles[2].description;
 
@@ -54,7 +53,6 @@ export function showNewsEvents({ articles }) {
        <a href="${urlStory1}" target="_parent"><button>Story Details</button></a>
       </div>
   </div>
-
     
   <!--Section: News of the day-->
 

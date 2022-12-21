@@ -1,8 +1,6 @@
-import { getGoogleEvents } from "./current_events.js";
-
-let header_search = document.getElementById("header_search");
-
 import { getNewsEvents } from "./news.js";
+import { getRestaurants } from "./restaurants.js";
+let header_search = document.getElementById("header_search");
 
 // header_search.addEventListener("submit", (e) => {
 //   e.preventDefault();
@@ -12,8 +10,8 @@ import { getNewsEvents } from "./news.js";
 //   alert("clicked");
 // });
 
-//import { loadWeatherModule } from "./weather_module.js";
-//loadWeatherModule();
+// import { loadWeatherModule } from "./weather_module.js";
+// loadWeatherModule();
 
 /* Get user's location and weather data if we can */
 
@@ -23,6 +21,7 @@ header_search.addEventListener("submit", (event) => {
   let loc = document.getElementById("city_search").value;
   alert(loc);
   getNewsEvents(loc);
+  getRestaurants(loc);
   header_search.reset();
 });
 

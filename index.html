@@ -116,11 +116,11 @@
     </nav>
 
 
-    <div class="container-fluid" id="big_picture_container"></div>
+    <div class="container-fluid d-none d-md-block d-lg-block" id="big_picture_container"></div>
     <div class="container-fluid" id="picture_container">
       <img
         src="https://i.ibb.co/vX45rfp/Local-Lore-Banner.jpg"
-        class="img-fluid animate__animated animate__fadeIn"
+        class="img-fluid animate__animated animate__fadeIn d-none d-md-block d-lg-block"
         alt="Local Lore Logo"
         id="local_lore_logo"
       />
@@ -132,19 +132,22 @@
     <div class="container-fluid" id="body">
            
     <section id="body_section" class="container-fluid">
-      <div class="nav_sections" id="resturants_around">
-        <div class="inner_sections">restaurants_around</div>
-      </div>
-      <!-- <div class="nav_sections" id="sight_visit">
-        <div class="inner_sections">sight_visit</div>
-      </div>
-      <div class="nav_sections" id="upcoming_events">
-        <div class="inner_sections">upcoming_events</div>
-      </div> -->
-      <div class="nav_sections" id="local_news">
-        <div class="inner_sections">
+           
+      <div class="nav_sections align-items-center" id="local_news">
+        <div class="inner_sections align-items-center">
           local_news
-          <div class="news_container" id="news_container"></div>
+          <div class="row align-items-center">
+            <div class="col">
+              One of three columns
+            </div>
+            <div class="col">
+              One of three columns
+            </div>
+            <div class="col">
+              One of three columns
+            </div>
+          </div>
+          
         </div>
       </div>
     </section>
