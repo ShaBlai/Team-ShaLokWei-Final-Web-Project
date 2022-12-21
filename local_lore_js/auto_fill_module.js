@@ -2,7 +2,7 @@ import { cityList } from "./city_list_data.js";
 
 export const load_auto_fill_module = () => {
   const THRESHOLD = 7;
-  const searchBox = document.getElementById("search_box");
+  const searchBox = document.getElementById("city_search");
 
   searchBox.addEventListener("input", (e) => {
     e.preventDefault();

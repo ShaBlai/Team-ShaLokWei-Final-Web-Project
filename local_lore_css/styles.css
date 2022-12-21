@@ -3,7 +3,7 @@ body {
 }
 
 #nav_header {
-  background: linear-gradient(to right, #7165ac, #6b53f7);
+  background: linear-gradient(to left, #73dfd0, #03414c);
   /* background-color: #6b53f7; */
   position: fixed;
   border-radius: 5px;
@@ -15,10 +15,6 @@ body {
 }
 #city_button:hover {
   background-color: #03414c;
-}
-
-.city {
-  min-width: 200px;
 }
 
 .nav_sections {
