@@ -1,6 +1,6 @@
 import { NEWS_EVENTS_API_KEY } from "./secrets.js";
 import { getData } from "./api_handler.js";
-import { getAPIDataWithoutCors } from "./api_helper_function";
+import { getAPIDataWithoutCors } from "./api_helper_function.js";
 
 //let searchedNews = document.getElementById("city_search").value;
 
