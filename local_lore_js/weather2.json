@@ -1,0 +1,270 @@
+{
+  "product": "astro",
+  "init": "2022122012",
+  "dataseries": [
+    {
+      "timepoint": 3,
+      "cloudcover": 9,
+      "seeing": 7,
+      "transparency": 2,
+      "lifted_index": 15,
+      "rh2m": 3,
+      "wind10m": { "direction": "NW", "speed": 2 },
+      "temp2m": 18,
+      "prec_type": "none"
+    },
+    {
+      "timepoint": 6,
+      "cloudcover": 9,
+      "seeing": 7,
+      "transparency": 2,
+      "lifted_index": 15,
+      "rh2m": 4,
+      "wind10m": { "direction": "N", "speed": 3 },
+      "temp2m": 17,
+      "prec_type": "none"
+    },
+    {
+      "timepoint": 9,
+      "cloudcover": 9,
+      "seeing": 7,
+      "transparency": 2,
+      "lifted_index": 15,
+      "rh2m": 1,
+      "wind10m": { "direction": "N", "speed": 3 },
+      "temp2m": 15,
+      "prec_type": "none"
+    },
+    {
+      "timepoint": 12,
+      "cloudcover": 9,
+      "seeing": 7,
+      "transparency": 2,
+      "lifted_index": 15,
+      "rh2m": 1,
+      "wind10m": { "direction": "N", "speed": 3 },
+      "temp2m": 14,
+      "prec_type": "none"
+    },
+    {
+      "timepoint": 15,
+      "cloudcover": 9,
+      "seeing": 7,
+      "transparency": 2,
+      "lifted_index": 15,
+      "rh2m": 1,
+      "wind10m": { "direction": "N", "speed": 3 },
+      "temp2m": 17,
+      "prec_type": "none"
+    },
+    {
+      "timepoint": 18,
+      "cloudcover": 9,
+      "seeing": 7,
+      "transparency": 2,
+      "lifted_index": 15,
+      "rh2m": 1,
+      "wind10m": { "direction": "N", "speed": 3 },
+      "temp2m": 20,
+      "prec_type": "none"
+    },
+    {
+      "timepoint": 21,
+      "cloudcover": 9,
+      "seeing": 7,
+      "transparency": 2,
+      "lifted_index": 15,
+      "rh2m": 1,
+      "wind10m": { "direction": "N", "speed": 3 },
+      "temp2m": 20,
+      "prec_type": "none"
+    },
+    {
+      "timepoint": 24,
+      "cloudcover": 9,
+      "seeing": 7,
+      "transparency": 2,
+      "lifted_index": 15,
+      "rh2m": 1,
+      "wind10m": { "direction": "N", "speed": 3 },
+      "temp2m": 17,
+      "prec_type": "none"
+    },
+    {
+      "timepoint": 27,
+      "cloudcover": 6,
+      "seeing": 8,
+      "transparency": 2,
+      "lifted_index": 15,
+      "rh2m": 2,
+      "wind10m": { "direction": "N", "speed": 2 },
+      "temp2m": 15,
+      "prec_type": "none"
+    },
+    {
+      "timepoint": 30,
+      "cloudcover": 4,
+      "seeing": 8,
+      "transparency": 2,
+      "lifted_index": 15,
+      "rh2m": 2,
+      "wind10m": { "direction": "N", "speed": 2 },
+      "temp2m": 13,
+      "prec_type": "none"
+    },
+    {
+      "timepoint": 33,
+      "cloudcover": 1,
+      "seeing": 7,
+      "transparency": 2,
+      "lifted_index": 15,
+      "rh2m": 2,
+      "wind10m": { "direction": "N", "speed": 2 },
+      "temp2m": 11,
+      "prec_type": "none"
+    },
+    {
+      "timepoint": 36,
+      "cloudcover": 2,
+      "seeing": 7,
+      "transparency": 2,
+      "lifted_index": 15,
+      "rh2m": 3,
+      "wind10m": { "direction": "N", "speed": 2 },
+      "temp2m": 11,
+      "prec_type": "none"
+    },
+    {
+      "timepoint": 39,
+      "cloudcover": 1,
+      "seeing": 7,
+      "transparency": 2,
+      "lifted_index": 15,
+      "rh2m": 0,
+      "wind10m": { "direction": "N", "speed": 3 },
+      "temp2m": 16,
+      "prec_type": "none"
+    },
+    {
+      "timepoint": 42,
+      "cloudcover": 1,
+      "seeing": 7,
+      "transparency": 1,
+      "lifted_index": 15,
+      "rh2m": -1,
+      "wind10m": { "direction": "NE", "speed": 3 },
+      "temp2m": 22,
+      "prec_type": "none"
+    },
+    {
+      "timepoint": 45,
+      "cloudcover": 1,
+      "seeing": 7,
+      "transparency": 1,
+      "lifted_index": 15,
+      "rh2m": -1,
+      "wind10m": { "direction": "NE", "speed": 3 },
+      "temp2m": 21,
+      "prec_type": "none"
+    },
+    {
+      "timepoint": 48,
+      "cloudcover": 1,
+      "seeing": 8,
+      "transparency": 1,
+      "lifted_index": 15,
+      "rh2m": 0,
+      "wind10m": { "direction": "NE", "speed": 3 },
+      "temp2m": 18,
+      "prec_type": "none"
+    },
+    {
+      "timepoint": 51,
+      "cloudcover": 1,
+      "seeing": 8,
+      "transparency": 2,
+      "lifted_index": 15,
+      "rh2m": 0,
+      "wind10m": { "direction": "NE", "speed": 3 },
+      "temp2m": 16,
+      "prec_type": "none"
+    },
+    {
+      "timepoint": 54,
+      "cloudcover": 1,
+      "seeing": 8,
+      "transparency": 2,
+      "lifted_index": 15,
+      "rh2m": 1,
+      "wind10m": { "direction": "N", "speed": 2 },
+      "temp2m": 13,
+      "prec_type": "none"
+    },
+    {
+      "timepoint": 57,
+      "cloudcover": 1,
+      "seeing": 7,
+      "transparency": 2,
+      "lifted_index": 15,
+      "rh2m": 2,
+      "wind10m": { "direction": "NE", "speed": 2 },
+      "temp2m": 12,
+      "prec_type": "none"
+    },
+    {
+      "timepoint": 60,
+      "cloudcover": 5,
+      "seeing": 7,
+      "transparency": 2,
+      "lifted_index": 15,
+      "rh2m": 2,
+      "wind10m": { "direction": "NE", "speed": 2 },
+      "temp2m": 12,
+      "prec_type": "none"
+    },
+    {
+      "timepoint": 63,
+      "cloudcover": 7,
+      "seeing": 7,
+      "transparency": 2,
+      "lifted_index": 15,
+      "rh2m": 0,
+      "wind10m": { "direction": "NE", "speed": 2 },
+      "temp2m": 16,
+      "prec_type": "none"
+    },
+    {
+      "timepoint": 66,
+      "cloudcover": 5,
+      "seeing": 7,
+      "transparency": 1,
+      "lifted_index": 15,
+      "rh2m": -1,
+      "wind10m": { "direction": "NE", "speed": 2 },
+      "temp2m": 20,
+      "prec_type": "none"
+    },
+    {
+      "timepoint": 69,
+      "cloudcover": 5,
+      "seeing": 7,
+      "transparency": 1,
+      "lifted_index": 15,
+      "rh2m": -1,
+      "wind10m": { "direction": "NE", "speed": 2 },
+      "temp2m": 20,
+      "prec_type": "none"
+    },
+    {
+      "timepoint": 72,
+      "cloudcover": 6,
+      "seeing": 8,
+      "transparency": 1,
+      "lifted_index": 15,
+      "rh2m": -1,
+      "wind10m": { "direction": "NE", "speed": 2 },
+      "temp2m": 18,
+      "prec_type": "none"
+    }
+  ]
+}
