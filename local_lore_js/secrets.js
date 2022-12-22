@@ -9,7 +9,7 @@ export const GOOGLE_EVENTS_API_KEY =
   "c2c933a8a1f0a8da97ac08da23945f89c935acd99bcffbac22c6e533aa0cb1dc";
 
 //Api Key from  https://newsapi.org/account
-export const NEWS_EVENTS_API_KEY = "99bd64b712ae49cca8ad9c81875f7a7d";
+export const NEWS_EVENTS_API_KEY = "f5e4cc3462fa4019913e9324359544e1";
 
 //Api Key from google.com
 //When I put it in as a variable, it acts weird?

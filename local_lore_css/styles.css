@@ -4,10 +4,9 @@ body {
 
 #nav_header {
   background: linear-gradient(to left, #73dfd0, #03414c);
-  /* background-color: #6b53f7; */
   position: fixed;
   border-radius: 5px;
-  z-index: 1000
+  z-index: 1000;
 }
 
 #city_button {
@@ -18,20 +17,16 @@ body {
   background-color: #03414c;
 }
 
-
-
 .nav_sections {
   height: 100vh;
   width: 100%;
   margin-bottom: 10px;
 }
 
-
-#local_lore_logo{
+#local_lore_logo {
   border-radius: 50%;
 }
 
-  
 #local_lore_logo {
   border-radius: 60%;
 }
@@ -48,12 +43,13 @@ body {
   padding-bottom: 30%;
   background-color: #73dfd0;
   position: relative;
-  z-index: -5;    
+  z-index: -5;
 }
 
 .inner_sections {
   border-style: solid;
-  border-color: black;
+  border-color: rgb(226, 226, 226);
+  border-width: 1px;
   height: 100%;
   width: 100%;
 }
@@ -103,12 +99,72 @@ body {
   justify-content: space-evenly;
 }
 
+#news_header {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #73dfd0;
+  border-radius: 6px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#news_header:hover {
+  border-color: #03414c66;
+}
+
 .auto_fill {
   position: relative;
   display: inline-block;
   width: 100%;
-  /* max-width: 480px; */
   margin-right: 10px;
+}
+
+#news_story_container1 {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #73dfd0;
+  border-radius: 5px;
+  height: 78vh;
+  margin: 6px 6px 10px 12px;
+  position: relative;
+
+  min-height: 660px;
+}
+
+#news_story_container1:hover {
+  border-color: #03414c66;
+}
+
+#news_story_container2 {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #73dfd0;
+  border-radius: 5px;
+  height: 78vh;
+  margin: 6px 6px 10px 6px;
+  position: relative;
+
+  min-height: 660px;
+}
+
+#news_story_container2:hover {
+  border-color: #03414c66;
+}
+
+#news_story_container3 {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #73dfd0;
+  border-radius: 5px;
+  height: 78vh;
+  margin: 6px 12px 10px 6px;
+  position: relative;
+
+  min-height: 660px;
+}
+
+#news_story_container3:hover {
+  border-color: #03414c66;
 }
 
 .auto_fill_items {
@@ -138,7 +194,7 @@ body {
   color: #ffffff;
 }
 
-#body{
+#body {
   background-color: #73dfd0;
 }
 
