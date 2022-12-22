@@ -46,8 +46,6 @@ export function showNewsEvents({ articles }) {
   newsContainer2.className = "container-fluid col-4";
   newsContainer2.setAttribute("style", "width: 13rem");
 
-  
-  
   newsContainer.innerHTML = `   <!--Section: News of the day-->
   <div class="row-md-12 gx-5 animate__animated animate__fadeInUp animate__delay-1s">
     <div class="row-md-6 mb-4">
@@ -99,10 +97,10 @@ export function showNewsEvents({ articles }) {
      <button id="play_btn2" class="play_btn_cls">Play title</button>
     </div>
 </div>`;
-  
-newsContainer1.addEventListener("click", (e) => {
-  if (e.target.id === "play_btn2") {
-      let toRead = new SpeechSynthesisUtterance(title_id2.innerText);
+
+  newsContainer1.addEventListener("click", (e) => {
+    if (e.target.id === "play_btn2") {
+      let toRead = new SpeechSynthesisUtterance(titleStory2);
       synth.speak(toRead);
     }
   });
@@ -128,13 +126,13 @@ newsContainer1.addEventListener("click", (e) => {
      <button id="play_btn3">Play title</button>
      </div>
 </div>`;
-  
-    newsContainer2.addEventListener("click", (e) => {
-      if (e.target.id === "play_btn3") {
-        let toRead = new SpeechSynthesisUtterance(title_id3.innerText);
-        synth.speak(toRead);
-      }
-    });
+
+  newsContainer2.addEventListener("click", (e) => {
+    if (e.target.id === "play_btn3") {
+      let toRead = new SpeechSynthesisUtterance(title_id3.innerText);
+      synth.speak(toRead);
+    }
+  });
 
   news_story_container1.append(newsContainer);
   news_story_container2.append(newsContainer1);

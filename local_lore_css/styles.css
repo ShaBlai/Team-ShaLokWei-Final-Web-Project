@@ -1,11 +1,10 @@
-body {
+/* body {
   margin: 0px;
-}
+} */
 
 #nav_header {
   background: linear-gradient(to left, #73dfd0, #03414c);
   position: fixed;
-  border-radius: 5px;
   z-index: 1000;
 }
 
@@ -24,25 +23,22 @@ body {
 }
 
 #local_lore_logo {
-  border-radius: 50%;
-}
-
-#local_lore_logo {
-  border-radius: 60%;
-}
-
-#big_picture_container {
+  /* border-radius: 60%; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
-  height: 100%;
-  background-color: #73dfd0;
+  /* max-width: 480px; */
+  max-width: 900px;
 }
+
 #picture_container {
-  padding-top: 80px;
-  height: 70vh;
-  width: 100%;
-  padding-bottom: 30%;
-  background-color: #73dfd0;
   position: relative;
+  padding-top: 70px;
+  height: 400px;
+  width: 100%;
+  padding-bottom: 30px;
+  background: linear-gradient(to left, #73dfd0, #03414c);
   z-index: -5;
 }
 
