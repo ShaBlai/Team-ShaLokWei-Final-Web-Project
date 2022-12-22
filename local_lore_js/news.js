@@ -63,7 +63,7 @@ export function showNewsEvents({ articles }) {
       <p class="text-muted">
         ${contentStory1}
       </p>
-       <a href="${urlStory1}" target="_parent"><button>Story Details</button></a>
+       <a href="${urlStory1}" target="_parent"><button class="btn btn-outline-info">Story Details</button></a>
       </div>
   </div>
     
@@ -89,7 +89,7 @@ export function showNewsEvents({ articles }) {
     <p class="text-muted">
       ${contentStory2}
     </p>
-     <a href="${urlStory2}" target="_parent"><button>Story Details</button></a>
+     <a href="${urlStory2}" target="_parent"><button class="btn btn-outline-info">Story Details</button></a>
     </div>
 </div>
   
@@ -115,7 +115,7 @@ export function showNewsEvents({ articles }) {
     <p class="text-muted">
       ${contentStory3}
     </p>
-     <a href="${urlStory3}" target="_parent"><button>Story Details</button></a>
+     <a href="${urlStory3}" target="_parent"><button class="btn btn-outline-info">Story Details</button></a>
     </div>
 </div>
   
