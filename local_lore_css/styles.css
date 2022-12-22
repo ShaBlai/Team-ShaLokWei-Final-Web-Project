@@ -1,13 +1,13 @@
 body {
   margin: 0px;
-  width: 100%;
 }
 
 #nav_header {
   background: linear-gradient(to left, #73dfd0, #03414c);
+  /* background-color: #6b53f7; */
   position: fixed;
   border-radius: 5px;
-  z-index: 1000;
+  z-index: 1000
 }
 
 #city_button {
@@ -18,12 +18,20 @@ body {
   background-color: #03414c;
 }
 
+
+
 .nav_sections {
   height: 100vh;
   width: 100%;
   margin-bottom: 10px;
 }
 
+
+#local_lore_logo{
+  border-radius: 50%;
+}
+
+  
 #local_lore_logo {
   border-radius: 60%;
 }
@@ -36,12 +44,14 @@ body {
 #picture_container {
   padding-top: 80px;
   height: 70vh;
-  width: 100vw;
+  width: 100%;
+  padding-bottom: 30%;
   background-color: #73dfd0;
+  position: relative;
+  z-index: -5;    
 }
 
 .inner_sections {
-  margin-top: 70px;
   border-style: solid;
   border-color: black;
   height: 100%;
@@ -97,6 +107,7 @@ body {
   position: relative;
   display: inline-block;
   width: 100%;
+  /* max-width: 480px; */
   margin-right: 10px;
 }
 
@@ -111,7 +122,6 @@ body {
 }
 
 .auto_fill_items div {
-  z-index: 1000;
   padding: 10px;
   cursor: pointer;
   background-color: #fff;
@@ -126,6 +136,10 @@ body {
 .auto_fill_active {
   background-color: DodgerBlue !important;
   color: #ffffff;
+}
+
+#body{
+  background-color: #73dfd0;
 }
 
 /* #local_news {
