@@ -1,6 +1,6 @@
 //Error Handling for any issues that occur
 
-let DEFAULT_ERROR_MESSAGE = `I have no idea too`;
+let DEFAULT_ERROR_MESSAGE = `Error!`;
 
 export function handleCustomError(msg = DEFAULT_ERROR_MESSAGE) {
   const alertContainer = document.createElement("div");
