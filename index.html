@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Local Lore</title>
-
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
@@ -19,6 +19,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link rel="stylesheet" href="./local_lore_css/styles.css" />
+    
   </head>
 
 
@@ -29,10 +30,8 @@
       id="nav_header"
     >
 
-    
-      </div>
-
       <div class="container-fluid">
+        <img src ="favicon.ico" style="border-radius: 50%; margin-right: 10px;">
         <a class="navbar-brand animate__animated animate__fadeInUp" href="#"
           >Local Lore</a
         >
@@ -49,65 +48,20 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarToggler">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li
-              class="nav-item"
-              style="
-                border-style: solid;
-                border-width: 0px 1px 0px 0px;
-                border-color: aliceblue;
-              "
-            >
+            <li class="nav-item">
               <a
                 class="nav-link active animate__animated animate__fadeInUp"
                 aria-current="page"
                 href="#"
                 >Home</a>
-              
-
             </li>
-
-            <br/>
-
-            <li class="nav-item">
-
+            <!-- <li class="nav-item">
               <a
                 class="nav-link animate__animated animate__fadeInUp animate__delay-1s"
                 href="#resturants_around"
-
                 >Restaurants</a
               >
-
-            </li>
-            <!-- <li class="nav-item">
-
-                >Resturants</a
-              >
-            </li>
-            <li class="nav-item">
-
-              <a
-                class="nav-link animate__animated animate__fadeInUp animate__delay-1s"
-                href="#sight_visit"
-                >Sights</a
-              >
-
-            </li> -->
-            <!-- <li class="nav-item">
-
-            </li>
-            <li class="nav-item">
-
-              <a
-                class="nav-link animate__animated animate__fadeInUp animate__delay-1s"
-                href="#upcoming_events"
-                >Events</a
-
-              > -->
-            <!-- </li> -->
-
-              
-            </li>
-
+            </li> -->            
             <li class="nav-item">
               <a
                 class="nav-link animate__animated animate__fadeInUp animate__delay-1s"
@@ -123,7 +77,6 @@
               >
             </li>
           </ul>
-
           <form class="d-flex" id="header_search">
             <div class="auto_fill">
               <input
@@ -134,28 +87,23 @@
                 aria-label="Search"
               />
             </div>
-
-            <input class="btn btn-outline-warning" id="city_button" type="submit" />
-         
+            <input class="btn btn-outline-warning" id="city_button" type="submit" />       
           </form>
         </div>
       </div>
     </nav>
 
-
-
     <div class="container-fluid d-none d-md-block d-lg-block" id="big_picture_container"></div>
     <div class="container-fluid" id="picture_container">
       <img
         src="https://i.ibb.co/vX45rfp/Local-Lore-Banner.jpg"
+        src ="favicon.ico"
         class="img-fluid animate__animated animate__fadeIn d-none d-md-block d-lg-block"
         alt="Local Lore Logo"
         id="local_lore_logo"
       />
       </div>
     </div>
-
-
     <!-- Body section -->
     <div class="container-fluid" id="body">
            
@@ -165,14 +113,11 @@
         <div class="inner_sections align-items-center container-fluid" id="local_news">
           <h1 class="d-flex flex-row justify-content-center container-fluid">Your News:</h1>
           <div class="row align-items-center max-height: 45%">
-            <div class="col d-flex max-height: 45%" id="news_story_container1">
-              
+            <div class="col d-flex max-height: 45%" id="news_story_container1">          
             </div>
-            <div class="col d-flex max-height: 45%" id="news_story_container2">
-              
+            <div class="col d-flex max-height: 45%" id="news_story_container2">           
             </div>
-            <div class="col d-flex max-height: 45%" id="news_story_container3">
-              
+            <div class="col d-flex max-height: 45%" id="news_story_container3">           
             </div>
           </div>
           

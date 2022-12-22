@@ -5,7 +5,6 @@ body {
 
 #nav_header {
   background: linear-gradient(to left, #73dfd0, #03414c);
-  /* background-color: #6b53f7; */
   position: fixed;
   border-radius: 5px;
   z-index: 1000;
