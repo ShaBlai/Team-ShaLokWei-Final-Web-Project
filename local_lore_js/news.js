@@ -46,6 +46,8 @@ export function showNewsEvents({ articles }) {
   newsContainer2.className = "container-fluid col-4";
   newsContainer2.setAttribute("style", "width: 13rem");
 
+  
+  
   newsContainer.innerHTML = `   <!--Section: News of the day-->
   <div class="row-md-12 gx-5 animate__animated animate__fadeInUp animate__delay-1s">
     <div class="row-md-6 mb-4">
@@ -59,18 +61,22 @@ export function showNewsEvents({ articles }) {
   
     <div class="row-md-8 mb-4">
       <span class="badge bg-danger px-2 py-1 shadow-1-strong mb-3">News Story </span>
-      <h4><strong>${titleStory1}</strong></h4>
+      <h4 id="title_id1" ><strong>${titleStory1}</strong></h4>
       <p class="text-muted">
         ${contentStory1}
       </p>
        <a href="${urlStory1}" target="_parent"><button class="btn btn-outline-info">Story Details</button></a>
-      </div>
-  </div>
-    
-  <!--Section: News of the day-->
+       <button id="play_btn1">Play title</button>
+    </div>
+  </div>`;
 
-  
-`;
+  let synth = window.speechSynthesis;
+  newsContainer.addEventListener("click", (e) => {
+    if (e.target.id === "play_btn1") {
+      let toRead = new SpeechSynthesisUtterance(title_id1.innerText);
+      synth.speak(toRead);
+    }
+  });
 
   newsContainer1.innerHTML = `   <!--Section: News of the day-->
 <div class="row-md-12 gx-5 animate__animated animate__fadeInUp animate__delay-1s">
@@ -85,18 +91,21 @@ export function showNewsEvents({ articles }) {
 
   <div class="row-md-8 mb-4">
     <span class="badge bg-danger px-2 py-1 shadow-1-strong mb-3">News Story</span>
-    <h4><strong>${titleStory2}</strong></h4>
+    <h4 id="title_id2"><strong>${titleStory2}</strong></h4>
     <p class="text-muted">
       ${contentStory2}
     </p>
      <a href="${urlStory2}" target="_parent"><button class="btn btn-outline-info">Story Details</button></a>
+     <button id="play_btn2" class="play_btn_cls">Play title</button>
     </div>
-</div>
+</div>`;
   
-<!--Section: News of the day-->
-
-
-`;
+newsContainer1.addEventListener("click", (e) => {
+  if (e.target.id === "play_btn2") {
+      let toRead = new SpeechSynthesisUtterance(title_id2.innerText);
+      synth.speak(toRead);
+    }
+  });
 
   newsContainer2.innerHTML = `   <!--Section: News of the day-->
 <div class="row-md-12 gx-5 animate__animated animate__fadeInUp animate__delay-1s">
@@ -111,18 +120,21 @@ export function showNewsEvents({ articles }) {
 
   <div class="row-md-8 mb-4">
     <span class="badge bg-danger px-2 py-1 shadow-1-strong mb-3">News Story</span>
-    <h4><strong>${titleStory3}</strong></h4>
+    <h4 id="title_id3"><strong>${titleStory3}</strong></h4>
     <p class="text-muted">
       ${contentStory3}
     </p>
      <a href="${urlStory3}" target="_parent"><button class="btn btn-outline-info">Story Details</button></a>
-    </div>
-</div>
+     <button id="play_btn3">Play title</button>
+     </div>
+</div>`;
   
-<!--Section: News of the day-->
-
-
-`;
+    newsContainer2.addEventListener("click", (e) => {
+      if (e.target.id === "play_btn3") {
+        let toRead = new SpeechSynthesisUtterance(title_id3.innerText);
+        synth.speak(toRead);
+      }
+    });
 
   news_story_container1.append(newsContainer);
   news_story_container2.append(newsContainer1);
