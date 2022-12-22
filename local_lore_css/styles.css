@@ -79,20 +79,6 @@ body {
   padding-right: 0;
 }
 
-#left_body {
-  border: 2px solid green;
-  width: 35vw;
-  display: flex;
-  flex-direction: column;
-}
-
-#right_body {
-  border: 2px solid red;
-  width: 64vw;
-  display: flex;
-  flex-direction: column;
-}
-
 #user_form {
   border: 3px solid pink;
   height: 40%;
